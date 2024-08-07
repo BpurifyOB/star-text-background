@@ -167,7 +167,7 @@ section .moon {
     }
 }
 
-section .wave {
+.window .wave {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -178,14 +178,14 @@ section .wave {
     background-repeat: repeat-x;
 }
 
-section .wave.wave1 {
+.window .wave.wave1 {
     animation: animate 30s linear infinite;
     opacity: 1;
     bottom: 0px;
     z-index: 1000;
 }
 
-section .wave.wave2 {
+.window .wave.wave2 {
     animation: animate2 26s linear infinite;
     opacity: 0.5;
     bottom: 12px;
@@ -193,7 +193,7 @@ section .wave.wave2 {
     z-index: 999;
 }
 
-section .wave.wave3 {
+.window .wave.wave3 {
     animation: animate3 25s linear infinite;
     opacity: 0.2;
     bottom: 24px;
@@ -201,7 +201,7 @@ section .wave.wave3 {
     z-index: 998;
 }
 
-section .wave.wave4 {
+.window .wave.wave4 {
     animation: animate4 15s linear infinite;
     opacity: 0.7;
     bottom: 36px;
