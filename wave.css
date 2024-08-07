@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,21,108,1) 30%, rgba(29,75,230,1) 50%, rgba(88,111,251,1) 75%, rgba(250,120,246,1) 100%);
+    overflow: hidden;
+}
+
+.window {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(133,159,254);
+    background: linear-gradient( rgba(133,159,231,1) 0%, rgb(247, 161, 255) 30%, rgb(255, 224, 255) 50%, rgba(255,255,255,1) 51%, rgba(255,252,240,1) 55%, rgba(252,219,104,1) 80%);
+    clip-path: polygon(64.5% 0%, 200% 0%, 100% 100%, 27.5% 100%);
+    z-index: 5;
+}
+
+.sun {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #FEF6FF;
+    box-shadow: 0px 5px 40px 20px #FCFCFC;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+    /* animation: sunAnimation 100s infinite alternate; */
+}
+
+/* @keyframes sunAnimation {
+    0% {
+        background-color: white;
+        box-shadow: 0px 5px 40px 20px #FCFCFC;
+    }
+    
+    33% {
+        background-color: #FCE7FC;
+        box-shadow: 0px 5px 40px 40px #FFEEFF;
+    }
+    
+    66% {
+        background-color: #ECF2FC;
+        box-shadow: 0px 5px 40px 20px #DFECFC;
+    }
+    
+    100% {
+        background-color: white;
+        box-shadow: 0px 5px 40px 20px #FCFCFC;
+    }
+} */
+
+.sunshadow {
+    position: absolute
+}
+
+.sunshadow1 {
+    width: 350px;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 10px white;
+}
+
+.sunshadow2 {
+    width: 300px;
+    top: 56%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 30px white;
+}
+
+.sunshadow3 {
+    width: 280px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 14px white;
+}
+
+.sunshadow4 {
+    width: 200px;
+    top: 64%;
+    left: 52%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 14px white;
+}
+
+.sunshadow5 {
+    width: 300px;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 10px white;
+}
+
+.sunshadow6 {
+    width: 150px;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 15px white;
+}
+
+.sunshadow7 {
+    width: 100px;
+    top: 76%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 40px 15px white;
+}
+
+section .moon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(10deg, rgba(45,107,226,1) 0%, rgba(6,32,80,0.4) 45%, rgba(4,23,57,0) 60%, rgba(0,0,0,0) 100%);
+    box-shadow: -12px 12px 20px #5489F3;
+}
+
+.cloud {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    left: 35%;
+    top: 50%;
+    animation: cloud 8s linear infinite;
+    opacity: 0.5;
+    filter: blur(10px);
+    z-index: 7;
+}
+
+@keyframes cloud {
+    0%{
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        opacity: 0.7;
+        box-shadow: 30px 30px 30px white;
+    }
+
+    100%{
+        top: 35%;
+        width: 240px;
+        height: 240px;
+        left: 100%;
+        opacity: 0;
+        box-shadow: 60px 120px 80px white;
+    }
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background: url('wave.png');
+    background-size: 1000px 125px;
+    background-repeat: repeat-x;
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    opacity: 1;
+    bottom: 0px;
+    z-index: 1000;
+}
+
+section .wave.wave2 {
+    animation: animate2 26s linear infinite;
+    opacity: 0.5;
+    bottom: 12px;
+    animation-delay: -5s;
+    z-index: 999;
+}
+
+section .wave.wave3 {
+    animation: animate3 25s linear infinite;
+    opacity: 0.2;
+    bottom: 24px;
+    animation-delay: -2s;
+    z-index: 998;
+}
+
+section .wave.wave4 {
+    animation: animate4 15s linear infinite;
+    opacity: 0.7;
+    bottom: 36px;
+    animation-delay: -8s;
+    z-index: 997;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/*-----별 종류-----*/
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+.style1 {
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.style2 {
+    width: 2px;
+    height: 2px;
+}
+
+.style3 {
+    width: 3px;
+    height: 3px;
+}
+
+.style4 {
+    width: 5px;
+    height: 5px;
+}
+
+.opacity1 {
+    opacity: 1;
+}
+
+.opacity2 {
+    opacity: 0.5;
+}
+
+.opacity3 {
+    opacity: 0.2;
+}
+
+.twinkle1 {
+    animation-duration: 2s;
+    animation-name: twinkling;
+}
+
+.twinkle2 {
+    animation-duration: 4s;
+    animation-name: twinkling;
+}
+
+.twinkle3 {
+    animation-duration: 6s;
+    animation-name: twinkling;
+}
+
+.twinkle4 {
+    animation-duration: 8s;
+    animation-name: twinkling;
+}
+
+.twinkle5 {
+    animation-duration: 6s;
+    animation-name: twinklingWithNoBoxShadow;
+}
+
+.twinkle6 {
+    animation-duration: 7s;
+    animation-name: twinklingWithNoBoxShadow;
+}
+
+.twinkle7 {
+    animation-duration: 8s;
+    animation-name: twinklingWithNoBoxShadow;
+}
+
+.twinkle8 {
+    animation-duration: 9s;
+    animation-name: twinklingWithNoBoxShadow;
+}
+
+@keyframes twinkling {
+    0% {
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes twinklingWithNoBoxShadow {
+    0% {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+    }
+    20% {
+        background-color: #ffc4c4;
+        box-shadow: 0 0 10px 0px rgba(255, 196, 196, 1);
+    }
+    80% {
+        background-color: #c4cfff;
+        box-shadow: 0 0 10px 0px rgba(196, 207, 255, 1);
+    }
+    100% {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+    }
+}
