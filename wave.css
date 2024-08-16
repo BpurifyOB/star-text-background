@@ -9,15 +9,217 @@ body {
 }
 
 section {
+    margin: 10%;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,21,108,1) 30%, rgba(29,75,230,1) 50%, rgba(88,111,251,1) 75%, rgba(250,120,246,1) 100%);
+    width: 80%;
+    height: 80vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,21,100,1) 30%, rgba(29,75,230,1) 50%, rgba(88,111,251,1) 75%, rgb(255, 145, 251) 100%);
     overflow: hidden;
 }
 
-.ring {
+.ring1 {
     position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 25%;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 100px 100px rgba(45,144,232,0.2);
+    animation: ringRotate1 125s linear infinite;
+}
+
+@keyframes ringRotate1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(33deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+
+.ring2 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 50px rgba(107, 186, 255, 0.2);
+    animation: ringRotate2 135s linear infinite;
+}
+
+@keyframes ringRotate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.ring3 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow:0px 0px 100px 50px rgba(255, 255, 255, 0.075);
+    animation: ringRotate3 90s linear infinite;
+}
+
+@keyframes ringRotate3 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(33deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.ring4 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow:300px 300px 100px 100px rgba(255,255,255,0.1);
+    animation: ringRotate4 500s linear infinite;
+}
+
+@keyframes ringRotate4 {
+    0% {
+        transform: translate(-50%, -50%) rotate(25deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(25deg);
+    }
+}
+
+.ring5 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    width: 120%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow:300px 300px 100px 100px rgba(255,255,255,0.2);
+}
+
+.ring6 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(13.5deg);
+    width: 140%;
+    height: 120%;
+    border-radius: 50%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.25);;
+    box-shadow: inset 300px 300px 100px 100px rgba(255,255,255,0.05);
+    animation: ring6 720s linear infinite;
+}
+
+@keyframes ring6{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.ring6-1 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(9deg);
+    width: 180%;
+    height: 90%;
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.3);;
+    box-shadow: inset 300px 300px 100px 100px rgba(255,255,255,0.05);
+    animation: ring6-1 360s linear infinite;
+}
+
+@keyframes ring6-1{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.ring6-2 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 180%;
+    height: 92%;
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.4);;
+    box-shadow: inset 300px 300px 100px 100px rgba(255,255,255,0.05);
+    animation: ring6-2 540s linear infinite;
+}
+
+.ring6-3 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.4);;
+    box-shadow: inset 300px 300px 100px 100px rgba(255,255,255,0.05);
+    animation: ring6-2 18080s linear infinite;
+}
+
+@keyframes ring6-2{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
 }
 
 .window {
@@ -25,27 +227,43 @@ section {
     width: 100%;
     height: 100vh;
     background: rgb(133,159,254);
-    background: linear-gradient( rgba(133,159,231,1) 0%, rgb(247, 161, 255) 30%, rgb(255, 224, 255) 50%, rgba(255,255,255,1) 51%, rgba(255,252,240,1) 55%, rgba(252,219,104,1) 80%);
+    background: linear-gradient(rgba(133,159,231,1) 0%, rgb(247, 161, 255) 30%, rgb(255, 224, 255) 50%, rgba(255,255,255,1) 51%, rgba(255,252,240,1) 55%, rgba(252,219,104,1) 80%
+);
     clip-path: polygon(64.5% 0%, 200% 0%, 100% 100%, 27.5% 100%);
+    /* clip-path: polygon(100% 0%, 200% 0%, 100% 100%, 100% 100%); */
     z-index: 5;
 }
 
 .sun {
     position: absolute;
-    width: 260px;
-    height: 260px;
+    width: 245px;
+    height: 245px;
     border-radius: 50%;
     border-width: 5px;
     border: solid;
     border-color: #FEF6FF;
 
-    background-color: #FEF6FF;
+    background-color: #ffffff;
     box-shadow: 0px 5px 40px 20px #FCFCFC;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 8;
-    animation: sunAnimation 12s infinite alternate;
+    animation: sunAnimation 8s infinite alternate;
+}
+
+.light{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border-width: 5px;
+    border: solid;
+    border-color: #FEF6FF;
+    box-shadow: inset 0px 0px 100px 100px rgba(255,255,255,0.5);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @keyframes sunAnimation {
@@ -131,11 +349,26 @@ section .moon {
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 260px;
-    height: 260px;
+    width: 245px;
+    height: 245px;
     border-radius: 50%;
-    background: linear-gradient(10deg, rgba(45,107,226,1) 0%, rgba(6,32,80,0.4) 45%, rgba(4,23,57,0) 60%, rgba(0,0,0,0) 100%);
-    box-shadow: -12px 12px 20px #5489F3;
+    background: linear-gradient(10deg, rgb(41, 106, 226) 0%, rgba(6,32,80,0.45) 45%, rgba(4,23,57,0.1) 60%, rgba(0,0,0,0) 100%);
+    box-shadow: -16px 16px 25px 10px #5489F3;
+    animation: moon 10s linear infinite;
+}
+
+@keyframes moon{
+    0%{
+        box-shadow: -16px 16px 25px 10px #5489F3;
+    }
+
+    50%{
+        box-shadow: -4px 6px 15px 4px #94b8ff; /*#3466cc*/
+    }
+
+    0%{
+        box-shadow: -16px 16px 25px 10px #5489F3;
+    }
 }
 
 .cloud {
@@ -176,9 +409,9 @@ section .moon {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 125px;
+    height: 140px;
     background: url('wave.png');
-    background-size: 1000px 125px;
+    background-size: 1000px 140px;
     background-repeat: repeat-x;
 }
 
@@ -192,7 +425,7 @@ section .moon {
 .window .wave.wave2 {
     animation: animate2 26s linear infinite;
     opacity: 0.5;
-    bottom: 12px;
+    bottom: 15px;
     animation-delay: -5s;
     z-index: 999;
 }
@@ -200,7 +433,7 @@ section .moon {
 .window .wave.wave3 {
     animation: animate3 25s linear infinite;
     opacity: 0.2;
-    bottom: 24px;
+    bottom: 30px;
     animation-delay: -2s;
     z-index: 998;
 }
@@ -208,7 +441,7 @@ section .moon {
 .window .wave.wave4 {
     animation: animate4 15s linear infinite;
     opacity: 0.7;
-    bottom: 36px;
+    bottom: 45px;
     animation-delay: -8s;
     z-index: 997;
 }

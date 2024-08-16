@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const section = document.querySelector('section');
-    const windowWidth = window.innerWidth * 0.66;
+    const windowWidth = window.innerWidth * 1;
     const windowHeight = window.innerHeight * 1; // 70% 높이까지만 별이 생성되도록 설정
 
     const style = ['style1', 'style2', 'style3', 'style4']; // 스타일 추가
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.floor(Math.random() * max);
     }
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 125; i++) {
         const star = document.createElement('div');
         star.className = 'star ' + style[getRandomValue(style.length)] + ' ' + opacity[getRandomValue(opacity.length)] + ' ' + twinkle[getRandomValue(twinkle.length)];
 
