@@ -1,0 +1,88 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 190, 180, 0.1), rgba(255, 190, 180, 0.5)), url('landscape.jpg');
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 190, 180);
+    
+    border: 3px solid #CA99AF;
+    border-radius: 17.5px;
+    padding: 0px;
+    overflow: hidden;
+    transition: box-shadow 2s ease;
+    transition: 1s ease;
+    box-shadow: 1px 1px #CA99AF;
+}
+
+.text {
+    position: absolute;
+    color: #CA99AF;
+    font-size: 50px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    z-index: 2;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(wave.svg);
+    background-size: 200% 100%;
+    animation: wave 3s linear infinite;
+    transform: translateY(47px);
+    transition: transform 2s;
+    z-index: 1;
+}
+
+#button:hover .wave{
+    transform: translateY(0px);
+}
+
+#button:hover {
+    box-shadow: 7px 7px #825E67;
+    border-color:#825E67;
+    background-position-x: -7.5;
+    background-position-y: -7.5;
+    background-color: #BE8896
+}
+
+#button:hover .text{
+    color: #825E67;
+}
+
+@keyframes wave {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 200%;
+    }
+}
